@@ -1,0 +1,586 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ShahRosh Tech | Leading IT Experts in Patna</title>
+    <meta name="description"
+        content="Discover ShahRosh Tech - the most innovative IT company in Patna. Learn about our expert team providing premium digital solutions in Bihar.">
+    <meta name="keywords"
+        content="IT Company in Patna, Digital Marketing Agency Patna, Software Development Patna, SEO Services Patna, ShahRosh Tech Patna">
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ShahRosh Tech",
+      "url": "https://ShahRoshtech.com/about.html",
+      "logo": "https://ShahRoshtech.com/logo1.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Patna",
+        "addressRegion": "Bihar",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+
+    <!-- Tailwind and Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        as="style">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-float {
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(140, 82, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-[#F8FAFC]">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-transparent transition-all duration-300 py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="logo1.jpg" alt="ShahRosh Tech - IT Company"
+                    class="h-10 w-auto rounded-lg shadow-sm bg-white/10 backdrop-blur-sm p-1">
+            </a>
+
+            <div class="hidden md:flex space-x-8 text-sm font-medium nav-links">
+                <a href="index.html" class="text-white hover:text-[#00E1D9] transition">Home</a>
+                <a href="about.html" class="text-[#00E1D9] transition font-bold">About</a>
+                <a href="services.html" class="text-white hover:text-[#00E1D9] transition">Services</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="hidden md:inline-block bg-[#8C52FF] text-white px-5 py-2 rounded-md font-bold text-sm hover:bg-[#7b46e0] transition-colors">Contact</a>
+
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-white focus:outline-none p-1.5 bg-white/10 rounded-lg hover:bg-white/20 transition-all z-[60]">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Side Drawer -->
+        <div id="mobile-menu"
+            class="md:hidden fixed inset-y-0 right-0 w-[300px] bg-white z-[100] transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col">
+
+            <div class="p-6 flex items-center justify-between border-b border-gray-100">
+                <div class="flex items-center gap-3">
+                    <img src="logo1.jpg" alt="ShahRosh Tech" class="h-10 w-auto rounded-md shadow-sm">
+                </div>
+                <button id="close-menu" class="p-2 text-gray-400 hover:text-[#8C52FF] transition-colors">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex-grow p-8">
+                <nav class="flex flex-col space-y-6">
+                    <a href="index.html"
+                        class="text-xl font-bold text-[#120B2E] hover:text-[#8C52FF] transition-colors flex items-center justify-between group">
+                        Home <span class="opacity-0 group-hover:opacity-100 transition-opacity"><svg class="w-3 h-3 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                    </a>
+                    <a href="about.html"
+                        class="text-xl font-bold text-[#120B2E] hover:text-[#8C52FF] transition-colors flex items-center justify-between group">
+                        About <span class="opacity-0 group-hover:opacity-100 transition-opacity"><svg class="w-3 h-3 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                    </a>
+                    <a href="services.html"
+                        class="text-xl font-bold text-[#120B2E] hover:text-[#8C52FF] transition-colors flex items-center justify-between group">
+                        Services <span class="opacity-0 group-hover:opacity-100 transition-opacity"><svg class="w-3 h-3 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                    </a>
+                </nav>
+
+                <div class="mt-12">
+                    <a href="contact.html"
+                        class="block w-full bg-[#8C52FF] text-white text-center py-4 rounded-xl font-bold shadow-lg shadow-[#8C52FF]/20 hover:shadow-[#8C52FF]/40 transform hover:-translate-y-0.5 transition-all">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="menu-overlay"
+            class="md:hidden fixed inset-0 bg-[#120B2E]/20 backdrop-blur-sm z-[90] opacity-0 pointer-events-none transition-opacity duration-300">
+        </div>
+
+
+    </header>
+
+    <!-- Standardized Hero Section -->
+    <section
+        class="relative min-h-[60vh] md:min-h-[70vh] flex items-center pt-32 pb-20 overflow-hidden bg-[#090514] text-white">
+        <!-- Background Elements -->
+        <canvas id="heroPlexusCanvas" class="absolute inset-0 z-0 opacity-40"></canvas>
+        <div
+            class="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-[#8C52FF]/20 blur-[150px] rounded-full pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#00E1D9]/15 blur-[120px] rounded-full pointer-events-none">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center pt-10">
+                <div
+                    class="inline-block px-5 py-2 border border-[#8C52FF]/30 bg-[#8C52FF]/10 rounded-full mb-8 animate-fade-in text-[#8C52FF] text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase">
+                    Who We Are
+                </div>
+                <h1
+                    class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight leading-tight drop-shadow-2xl">
+                    About <span class="text-gradient">Us</span>
+                </h1>
+                <p class="text-slate-400 max-w-2xl mx-auto text-xs md:text-base lg:text-lg leading-relaxed font-normal">
+                    ShahRosh TECH is a fast-growing IT company powered by a team of skilled freelancers turned
+                    professionals, delivering innovative and scalable digital solutions.
+            </div>
+        </div>
+    </section>
+
+    <!-- Left Text, Right Image Section -->
+    <section class="py-32 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+
+                <!-- Left: Text Content -->
+                <div class="lg:w-1/2 space-y-10">
+                    <div class="space-y-4">
+                        <div class="w-12 h-1 bg-[#8C52FF] rounded-full"></div>
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 leading-[1.2]">
+                            Driven by Experience, Built for Growth
+                        </h2>
+                    </div>
+
+                    <div class="space-y-6 text-slate-600 leading-relaxed text-sm lg:text-base">
+                        <p>
+                            ShahRosh TECH was built from a team of passionate freelancers who have worked across diverse
+                            projects and industries. With real-world experience and practical execution, we focus on
+                            delivering digital solutions that are reliable, scalable, and aligned with business goals.
+                        </p>
+                        <p>
+                            Our approach combines modern technologies with a strong understanding of user needs and
+                            performance. We focus on building digital systems that are efficient, user-friendly, and
+                            designed to support long-term business growth.
+                        </p>
+                    </div>
+
+                    <!-- Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-6">
+
+                        <!-- Card 1 -->
+                        <div
+                            class="flex items-start gap-4 p-8 bg-slate-50 rounded-3xl border border-slate-100 group hover:border-[#8C52FF]/30 transition-all duration-300">
+                            <div
+                                class="w-12 h-12 bg-white flex items-center justify-center rounded-2xl shadow-sm text-[#8C52FF] text-xl font-bold group-hover:bg-[#8C52FF] group-hover:text-white transition-all">
+                                01
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 mb-1">Real Project Experience</h4>
+                                <p class="text-xs text-slate-500">
+                                    Hands-on experience across multiple industries with practical execution.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div
+                            class="flex items-start gap-4 p-8 bg-slate-50 rounded-3xl border border-slate-100 group hover:border-[#00E1D9]/30 transition-all duration-300">
+                            <div
+                                class="w-12 h-12 bg-white flex items-center justify-center rounded-2xl shadow-sm text-[#00E1D9] text-xl font-bold group-hover:bg-[#00E1D9] group-hover:text-white transition-all">
+                                02
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 mb-1">Modern & Scalable Approach</h4>
+                                <p class="text-xs text-slate-500">
+                                    Focused on building efficient, scalable, and future-ready digital solutions.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="lg:w-1/2 relative">
+                    <div class="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl animate-float">
+                        <img src="about-us.png" alt="ShahRosh Tech Workspace" class="w-full h-auto">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-[#8C52FF]/20 to-transparent"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section (Gradient Backdrop) -->
+    <section class="py-32 bg-gradient-to-bl from-[#8C52FF]/10 to-[#00E1D9]/10 relative overflow-hidden text-slate-900">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#8C52FF]/5 blur-[120px] rounded-full opacity-50">
+        </div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#00E1D9]/5 blur-[120px] rounded-full opacity-50">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <div class="inline-block px-5 py-1.5 border border-[#8C52FF]/20 bg-[#8C52FF]/5 rounded-full mb-6">
+                    <span class="text-[#8C52FF] text-[10px] font-bold tracking-widest uppercase">The Difference</span>
+                </div>
+
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight">
+                    Why Choose ShahRosh TECH?
+                </h2>
+
+                <p class="text-slate-500 text-sm md:text-base leading-relaxed">
+                    We focus on practical execution, real project experience, and scalable solutions that help
+                    businesses grow in the digital landscape.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Item 1 -->
+                <div
+                    class="p-10 rounded-[3rem] glass-card border-none bg-white shadow-xl group hover:scale-[1.02] transition-all duration-500">
+                    <div
+                        class="w-16 h-16 bg-[#8C52FF]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform">
+                        <svg class="w-8 h-8 text-[#8C52FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Real Execution Focus</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed font-light">
+                        We focus on practical implementation, ensuring every solution is built with real-world usability
+                        and performance in mind.
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div
+                    class="p-10 rounded-[3rem] glass-card border-none bg-white shadow-xl group hover:scale-[1.02] transition-all duration-500">
+                    <div
+                        class="w-16 h-16 bg-[#00E1D9]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform">
+                        <svg class="w-8 h-8 text-[#00E1D9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Transparent Workflow</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed font-light">
+                        We maintain clear communication and keep clients informed at every stage of the project.
+                    </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div
+                    class="p-10 rounded-[3rem] glass-card border-none bg-white shadow-xl group hover:scale-[1.02] transition-all duration-500">
+                    <div
+                        class="w-16 h-16 bg-[#8C52FF]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform">
+                        <svg class="w-8 h-8 text-[#8C52FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Growth-Oriented Solutions</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed font-light">
+                        Our focus is on building scalable digital systems that support long-term business growth.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Mission & Vision Section (Elegant Redesign) -->
+    <section class="py-32 bg-slate-50 relative overflow-hidden">
+        <!-- Background Decor -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-[#8C52FF]/5 to-[#00E1D9]/5 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                
+                <!-- Mission & Vision Content -->
+                <div class="lg:w-full grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    
+                    <!-- Mission Card -->
+                    <div class="group relative">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-[#8C52FF] to-[#8C52FF] rounded-[3rem] blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                        <div class="relative bg-white p-10 lg:p-14 rounded-[3rem] border border-slate-100 flex flex-col h-full shadow-2xl shadow-slate-200/50 transition-all duration-500 group-hover:-translate-y-2">
+                            <div class="w-14 h-14 bg-gradient-to-br from-[#8C52FF] to-[#7b46e0] flex items-center justify-center rounded-2xl shadow-lg shadow-[#8C52FF]/20 mb-10 overflow-hidden transform group-hover:rotate-6 transition-all duration-500">
+                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-3xl font-bold text-slate-900 mb-6">Our Mission</h3>
+                            <p class="text-slate-500 text-lg leading-relaxed font-light mb-8">
+                                To empower businesses with cutting-edge, scalable, and affordable digital technology. We
+                                strive to bridge the gap between complex engineering and simplified user experiences,
+                                ensuring every client gains a formidable digital edge.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="text-[#8C52FF] font-bold text-xs uppercase tracking-[0.2em] opacity-50 group-hover:opacity-100 transition-opacity">Precision & Purpose</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vision Card -->
+                    <div class="group relative">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-[#00E1D9] to-[#00E1D9] rounded-[3rem] blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                        <div class="relative bg-white p-10 lg:p-14 rounded-[3rem] border border-slate-100 flex flex-col h-full shadow-2xl shadow-slate-200/50 transition-all duration-500 group-hover:-translate-y-2">
+                            <div class="w-14 h-14 bg-gradient-to-br from-[#00E1D9] to-[#00c9c2] flex items-center justify-center rounded-2xl shadow-lg shadow-[#00E1D9]/20 mb-10 overflow-hidden transform group-hover:rotate-6 transition-all duration-500">
+                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-3xl font-bold text-slate-900 mb-6">Our Vision</h3>
+                            <p class="text-slate-500 text-lg leading-relaxed font-light mb-8">
+                                To become the ultimate global technology destination originating from India. We envision a
+                                future where ShahRosh Tech is synonymous with excellence, innovation, and unwavering trust,
+                                transforming the digital landscape one breakthrough at a time.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="text-[#00E1D9] font-bold text-xs uppercase tracking-[0.2em] opacity-50 group-hover:opacity-100 transition-opacity">Future-Ready Innovation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Reused From Index -->
+    <section class="py-24 relative overflow-hidden bg-gradient-to-r from-[#8C52FF]/10 to-[#00E1D9]/10 text-slate-900">
+        <!-- Background Decor Reused From Index -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-[#8C52FF]/10 blur-[120px] rounded-full">
+            </div>
+            <div class="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-[#00E1D9]/10 blur-[120px] rounded-full"></div>
+            <div class="absolute inset-0 opacity-[0.03]"
+                style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 40px 40px;">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div
+                class="max-w-5xl mx-auto py-16 px-8 bg-white/40 backdrop-blur-md rounded-[3rem] border border-white/50 shadow-2xl flex flex-col items-center text-center">
+                <!-- Badge -->
+                <div
+                    class="inline-flex items-center gap-3 px-5 py-2 bg-[#8C52FF]/5 border border-[#8C52FF]/10 rounded-full mb-10">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00E1D9] opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#00E1D9]"></span>
+                    </span>
+                    <span class="text-slate-900 text-[10px] font-bold tracking-widest">Let's build together</span>
+                </div>
+
+                <!-- Heading -->
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 mb-8 leading-tight">
+                    Have an Idea? <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-[#8C52FF] via-[#00E1D9] to-[#8C52FF]">Let's
+                        Talk</span>
+                </h2>
+
+                <!-- Short Description -->
+                <p class="text-slate-600 text-sm md:text-base mb-10 max-w-xl">
+                    We turn your ideas into scalable digital solutions with a focus on performance and growth.
+                </p>
+
+                <!-- Button -->
+                <div class="flex justify-center">
+                    <a href="mailto:shahroshtech@gmail.com"
+                        class="group relative px-12 py-4 bg-gradient-to-r from-[#8C52FF] to-[#00E1D9] text-white rounded-full font-bold text-sm tracking-wide shadow-2xl shadow-[#8C52FF]/20 overflow-hidden transition-all hover:scale-105 hover:shadow-[#8C52FF]/40">
+                        <span class="relative z-10">Get in touch</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#090514] pt-20 pb-10 border-t border-white/10 text-white relative overflow-hidden">
+        <!-- Background Plexus Animation Canvas (Footer) -->
+        <canvas id="footerPlexusCanvas" class="absolute inset-0 z-0 opacity-40 pointer-events-none"></canvas>
+
+        <div class="container mx-auto px-6 relative z-10">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Branding -->
+                <div>
+                    <div class="bg-white p-2 rounded-lg inline-block mb-6">
+                        <a href="index.html"
+                            class="flex items-center gap-3 text-xl font-bold text-black tracking-tighter">
+                            <img src="logo.png" alt="ShahRosh Tech - Digital Marketing Agency" class="h-8 w-auto">
+                        </a>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                        ShahRosh Tech is an innovative <strong>IT Partner</strong> committed to excellence. We focus on
+                        delivering high-quality web experiences and <strong>strategic digital growth</strong> designed
+                        to help your business
+                        scale efficiently with transparent communication and solid engineering.
+                    </p>
+                    <div class="flex space-x-3">
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/ShahRoshtech" target="_blank"
+                            class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-[#8C52FF] hover:text-white transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12a10 10 0 10-11.5 9.87v-6.99H7.9v-2.88h2.6V9.8c0-2.57 1.53-3.99 3.87-3.99 1.12 0 2.3.2 2.3.2v2.53h-1.3c-1.28 0-1.68.8-1.68 1.62v1.94h2.86l-.46 2.88h-2.4v6.99A10 10 0 0022 12z" />
+                            </svg>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/company/ShahRoshtech" target="_blank"
+                            class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-[#8C52FF] hover:text-white transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M6.94 6.5A1.94 1.94 0 105 4.56a1.94 1.94 0 001.94 1.94zM4.5 8.5h4v11h-4zm7 0h3.6v1.5h.05a3.94 3.94 0 013.55-1.95c3.8 0 4.5 2.5 4.5 5.75V19.5h-4v-5c0-1.2 0-2.75-1.7-2.75s-2 1.3-2 2.65v5.1h-4z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/ShahRoshtech" target="_blank"
+                            class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-[#8C52FF] hover:text-white transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.22 4 20 5.78 20 7.75v8.5c0 1.97-1.78 3.75-3.75 3.75h-8.5C5.78 20 4 18.22 4 16.25v-8.5C4 5.78 5.78 4 7.75 4zm8.75 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-2 inline-block border-b-2 border-[#8C52FF] pb-1 text-white">Quick
+                        Links</h4>
+                    <ul class="mt-6 space-y-4">
+                        <li><a href="index.html"
+                                class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">Home</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">About
+                                Us</a></li>
+                        <li><a href="services.html"
+                                class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">Services</a>
+                        </li>
+                        <li><a href="contact.html" class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-xl font-bold mb-2 inline-block border-b-2 border-[#8C52FF] pb-1 text-white">Our
+                        Services</h4>
+                    <ul class="mt-6 space-y-4">
+                        <li><a href="web-development.html"
+                                class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">Web
+                                Development</a></li>
+                        <li><a href="app-development.html"
+                                class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">App
+                                Development</a></li>
+                        <li><a href="digital-marketing.html"
+                                class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">Digital
+                                Marketing</a></li>
+                        <li><a href="ui-ux-design.html"
+                                class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">UI/UX
+                                Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-bold mb-2 inline-block border-b-2 border-[#8C52FF] pb-1 text-white">Get In
+                        Touch</h4>
+                    <ul class="mt-6 space-y-6">
+
+                        <!-- Location -->
+                        <li class="flex items-start space-x-4">
+                            <div class="bg-white/10 p-3 rounded-lg">
+                                <svg class="w-5 h-5 text-[#8C52FF]" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-sm text-white">Our Main Office:</p>
+                                <p class="text-slate-400 text-xs mt-1">India</p>
+                            </div>
+                        </li>
+
+                        
+
+                        <!-- Email (NEW) -->
+                        <li class="flex items-start space-x-4">
+                            <div class="bg-white/10 p-3 rounded-lg">
+                                <svg class="w-5 h-5 text-[#8C52FF]" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M2 5a2 2 0 012-2h12a2 2 0 012 2v.5l-8 5-8-5V5zm0 2.236l7.445 4.653a1 1 0 001.11 0L18 7.236V15a2 2 0 01-2 2H4a2 2 0 01-2-2V7.236z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-sm text-white">Email:</p>
+                                <p class="text-slate-400 text-xs mt-1"><a href="mailto:shahroshtech@gmail.com"
+                                        class="hover:text-[#00E1D9] transition-colors">shahroshtech@gmail.com</a></p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 text-center pb-2" style="border-color: rgba(255,255,255,0.1);">
+                <p class="text-slate-500 text-xs font-bold tracking-widest">&copy; 2026 ShahRosh Tech. All Rights
+                    Reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
+
+
+
+
+

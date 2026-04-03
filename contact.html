@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact ShahRosh Tech | Best IT Company in Patna</title>
+    <meta name="description"
+        content="Contact ShahRosh Tech, the leading IT Company in Patna. Get in touch with our expert team of web developers and digital marketers in Bihar for premium services.">
+    <meta name="keywords" content="Contact ShahRosh Tech Patna, IT Support Bihar, Tech Consultation Patna, Business Inquiry Bihar, ShahRosh Tech Address">
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ShahRosh Tech",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Patna",
+        "addressRegion": "Bihar",
+        "addressCountry": "IN"
+      },
+      "url": "https://ShahRoshtech.com/contact.html",
+      "telephone": ""
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .form-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(140, 82, 255, 0.2);
+            padding: 0.75rem 1rem;
+            border-radius: 0.75rem;
+            outline: none;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            border-color: #8C52FF;
+            box-shadow: 0 0 0 4px rgba(140, 82, 255, 0.1);
+        }
+        #success-message {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F8FAFC]">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-transparent transition-all duration-300 py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="logo1.jpg" alt="ShahRosh Tech - IT Company"
+                    class="h-10 w-auto rounded-lg shadow-sm bg-white/10 backdrop-blur-sm p-1">
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium nav-links">
+                <a href="index.html" class="text-white hover:text-[#00E1D9] transition">Home</a>
+                <a href="about.html" class="text-white hover:text-[#00E1D9] transition">About</a>
+                <a href="services.html" class="text-white hover:text-[#00E1D9] transition">Services</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="hidden md:inline-block bg-[#8C52FF] text-white px-5 py-2 rounded-md font-bold text-sm hover:bg-[#7b46e0] transition-colors">Contact</a>
+                
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-white focus:outline-none p-1.5 bg-white/10 rounded-lg hover:bg-white/20 transition-all z-[60]">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Side Drawer -->
+        <div id="mobile-menu"
+            class="md:hidden fixed inset-y-0 right-0 w-[300px] bg-white z-[100] transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col">
+            
+            <div class="p-6 flex items-center justify-between border-b border-gray-100">
+                <div class="flex items-center gap-3">
+                    <img src="logo1.jpg" alt="ShahRosh Tech" class="h-10 w-auto rounded-md shadow-sm">
+                </div>
+                <button id="close-menu" class="p-2 text-gray-400 hover:text-[#8C52FF] transition-colors">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex-grow p-8">
+                <nav class="flex flex-col space-y-6">
+                    <a href="index.html" class="text-xl font-bold text-[#120B2E] hover:text-[#8C52FF] transition-colors flex items-center justify-between group">
+                        Home <span class="opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
+                    </a>
+                    <a href="about.html" class="text-xl font-bold text-[#120B2E] hover:text-[#8C52FF] transition-colors flex items-center justify-between group">
+                        About <span class="opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
+                    </a>
+                    <a href="services.html" class="text-xl font-bold text-[#120B2E] hover:text-[#8C52FF] transition-colors flex items-center justify-between group">
+                        Services <span class="opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
+                    </a>
+                </nav>
+
+                <div class="mt-12">
+                    <a href="contact.html"
+                        class="block w-full bg-[#8C52FF] text-white text-center py-4 rounded-xl font-bold shadow-lg shadow-[#8C52FF]/20 hover:shadow-[#8C52FF]/40 transform hover:-translate-y-0.5 transition-all">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu-overlay"
+            class="md:hidden fixed inset-0 bg-[#120B2E]/20 backdrop-blur-sm z-[90] opacity-0 pointer-events-none transition-opacity duration-300">
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="relative pt-40 pb-24 bg-[#090514] text-white border-b border-white/10 overflow-hidden">
+        <canvas id="heroPlexusCanvas" class="absolute inset-0 z-0 opacity-30"></canvas>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 tracking-tight text-white leading-tight">
+                Get In <span class="text-[#00E1D9]">Touch</span>
+            </h1>
+            <p class="text-[#00E1D9] max-w-2xl mx-auto text-lg md:text-xl font-medium">
+                Ready to elevate your digital presence? We're just a message away.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <!-- Info Column -->
+                <div class="space-y-12">
+                    <div>
+                        <h2 class="text-3xl font-bold text-[#120B2E] mb-6">Let's solve your tech challenges.</h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Have a project in mind or just want to say hi? We'd love to hear from you. Our team typically responds within 2 hours during business hours.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Location -->
+                        <div class="p-8 bg-slate-50 rounded-3xl border border-gray-100 transition-all hover:border-[#8C52FF]/30 group">
+                            <div class="w-12 h-12 bg-white shadow-md rounded-2xl flex items-center justify-center text-[#8C52FF] mb-6">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <h4 class="text-lg font-bold text-[#120B2E] mb-2">Our Hub</h4>
+                            <p class="text-gray-500 text-sm">India</p>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="p-8 bg-slate-50 rounded-3xl border border-gray-100 transition-all hover:border-[#00E1D9]/30 group">
+                            <div class="w-12 h-12 bg-white shadow-md rounded-2xl flex items-center justify-center text-[#00E1D9] mb-6">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <h4 class="text-lg font-bold text-[#120B2E] mb-2">Email Us</h4>
+                            <p class="text-gray-500 text-sm">shahroshtech@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Social proof card -->
+                    <div class="p-8 bg-gradient-to-r from-[#120B2E] to-[#090514] rounded-3xl text-white shadow-2xl relative overflow-hidden">
+                        <div class="relative z-10">
+                            <p class="text-sm font-medium text-[#00E1D9] mb-4 uppercase tracking-widest">Connect with us</p>
+                            <h4 class="text-xl font-bold mb-6">Follow our journey and stay updated with the latest in tech.</h4>
+                            <div class="flex gap-4">
+                                <a href="https://www.facebook.com/ShahRoshtech" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#8C52FF] transition-all">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.87v-6.99H7.9v-2.88h2.6V9.8c0-2.57 1.53-3.99 3.87-3.99 1.12 0 2.3.2 2.3.2v2.53h-1.3c-1.28 0-1.68.8-1.68 1.62v1.94h2.86l-.46 2.88h-2.4v6.99A10 10 0 0022 12z"/></svg>
+                                </a>
+                                <a href="https://www.linkedin.com/company/ShahRoshtech" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#8C52FF] transition-all">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.94 6.5A1.94 1.94 0 105 4.56a1.94 1.94 0 001.94 1.94zM4.5 8.5h4v11h-4zm7 0h3.6v1.5h.05a3.94 3.94 0 013.55-1.95c3.8 0 4.5 2.5 4.5 5.75V19.5h-4v-5c0-1.2 0-2.75-1.7-2.75s-2 1.3-2 2.65v5.1h-4z"/></svg>
+                                </a>
+                                <a href="https://www.instagram.com/ShahRoshtech" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#8C52FF] transition-all">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.22 4 20 5.78 20 7.75v8.5c0 1.97-1.78 3.75-3.75 3.75h-8.5C5.78 20 4 18.22 4 16.25v-8.5C4 5.78 5.78 4 7.75 4zm8.75 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-[#8C52FF]/20 rounded-full blur-3xl"></div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-[#8C52FF]/10 to-[#00E1D9]/10 rounded-3xl blur-2xl"></div>
+                    <div class="relative p-10 bg-white/80 backdrop-blur-md rounded-3xl border border-white shadow-2xl shadow-[#120B2E]/5">
+                        <div id="contact-form-container">
+                            <h3 class="text-2xl font-bold text-[#120B2E] mb-8">Send us a message</h3>
+                             <form id="contact-form" action="https://formspree.io/f/xvovbkgw" method="POST" class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="space-y-2">
+                                        <label class="text-sm font-bold text-slate-700 ml-1">Full Name</label>
+                                        <input type="text" name="name" required placeholder="Full Name" class="form-input">
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label class="text-sm font-bold text-slate-700 ml-1">Email Address</label>
+                                        <input type="email" name="email" required placeholder="Email Address" class="form-input">
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 ml-1">Subject</label>
+                                    <input type="text" name="subject" required placeholder="Project Inquiry" class="form-input">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-slate-700 ml-1">Message</label>
+                                    <textarea name="message" required rows="4" placeholder="Tell us about your project..." class="form-input resize-none"></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-gradient-to-r from-[#8C52FF] to-[#00E1D9] text-white font-bold py-4 rounded-xl shadow-lg shadow-[#8C52FF]/20 hover:shadow-[#8C52FF]/40 transform hover:-translate-y-1 transition-all duration-300">
+                                    Send Message Now
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Success Message -->
+                        <div id="success-message" class="text-center py-12">
+                            <div class="w-20 h-20 bg-[#00E1D9]/10 rounded-full flex items-center justify-center text-[#00E1D9] mx-auto mb-6">
+                                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-[#120B2E] mb-4">Message Sent!</h3>
+                            <p class="text-gray-600 leading-relaxed mb-8">
+                                Thank you for reaching out. We have received your message and our team will get back to you shortly.
+                            </p>
+                            <button onclick="resetForm()" class="text-[#8C52FF] font-bold hover:underline">
+                                Send another message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#090514] pt-20 pb-10 border-t border-white/10 text-white relative overflow-hidden">
+        <canvas id="footerPlexusCanvas" class="absolute inset-0 z-0 opacity-40 pointer-events-none"></canvas>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Branding -->
+                <div>
+                    <div class="bg-white p-2 rounded-lg inline-block mb-6">
+                        <a href="index.html" class="flex items-center gap-3 text-xl font-bold text-black tracking-tighter">
+                            <img src="logo.png" alt="ShahRosh Tech" class="h-8 w-auto">
+                        </a>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                        ShahRosh Tech is an innovative technology partner committed to excellence. We focus on delivering high-quality web experiences and digital strategies designed to help your business scale efficiently.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-2 inline-block border-b-2 border-[#8C52FF] pb-1 text-white">Quick Links</h4>
+                    <ul class="mt-6 space-y-4">
+                        <li><a href="index.html" class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">About Us</a></li>
+                        <li><a href="services.html" class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">Services</a></li>
+                        <li><a href="contact.html" class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div>
+                    <h4 class="text-xl font-bold mb-2 inline-block border-b-2 border-[#8C52FF] pb-1 text-white">Our Services</h4>
+                    <ul class="mt-6 space-y-4">
+                        <li><a href="web-development.html" class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">Web Development</a></li>
+                        <li><a href="app-development.html" class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">App Development</a></li>
+                        <li><a href="digital-marketing.html" class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">Digital Marketing</a></li>
+                        <li><a href="ui-ux-design.html" class="text-slate-400 hover:text-[#00E1D9] transition flex items-center text-sm">UI/UX Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-bold mb-2 inline-block border-b-2 border-[#8C52FF] pb-1 text-white">Get In Touch</h4>
+                    <ul class="mt-6 space-y-6">
+                        <li class="flex items-start space-x-4">
+                            <div class="bg-white/10 p-3 rounded-lg">
+                                <svg class="w-5 h-5 text-[#8C52FF]" fill="currentColor" viewBox="0 0 20 20"><path d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-sm text-white">Our Main Office:</p>
+                                <p class="text-slate-400 text-xs mt-1">India</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="bg-white/10 p-3 rounded-lg">
+                                <svg class="w-5 h-5 text-[#8C52FF]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v.5l-8 5-8-5V5zm0 2.236l7.445 4.653a1 1 0 001.11 0L18 7.236V15a2 2 0 01-2 2H4a2 2 0 01-2-2V7.236z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-sm text-white">Email:</p>
+                                <p class="text-slate-400 text-xs mt-1"><a href="mailto:shahroshtech@gmail.com" class="hover:text-[#00E1D9] transition-colors font-medium">shahroshtech@gmail.com</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center">
+                <p class="text-slate-500 text-xs font-bold tracking-widest">&copy; 2026 ShahRosh Tech. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script>
+        // Simulated Form Handling (No data will be sent)
+        const contactForm = document.getElementById('contact-form');
+        const formContainer = document.getElementById('contact-form-container');
+        const successMessage = document.getElementById('success-message');
+
+        if (contactForm) {
+            contactForm.onsubmit = (e) => {
+                e.preventDefault();
+                
+                // Show a loading state on the button (optional but looks nice)
+                const btn = contactForm.querySelector('button[type="submit"]');
+                const originalText = btn.innerText;
+                btn.innerText = 'Sending...';
+                btn.disabled = true;
+
+                // Simulate a 1-second delay for a premium feel
+                setTimeout(() => {
+                    formContainer.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    contactForm.reset();
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                }, 1000);
+            };
+        }
+
+        function resetForm() {
+            successMessage.style.display = 'none';
+            formContainer.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+

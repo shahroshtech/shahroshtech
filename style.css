@@ -1,0 +1,126 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Nunito Sans', sans-serif;
+}
+
+body {
+    font-family: var(--secondary-font);
+    background-color: #F8FAFC;
+    color: #0f172a;
+    font-size: 16px;
+    line-height: 1.65;
+    font-weight: 400;
+}
+
+/* Typography System */
+/* Exclude footer from font family change */
+:not(footer):not(footer *) > h1, 
+:not(footer):not(footer *) > h2, 
+:not(footer):not(footer *) > h3, 
+:not(footer):not(footer *) > h4,
+:not(footer):not(footer *) > h5 {
+    font-family: var(--primary-font);
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+p:not(footer p) {
+    margin-bottom: 20px; /* midpoint of 18-22px */
+}
+
+/* Desktop Sizes */
+@media (min-width: 1024px) {
+    h1 { font-size: 60px; }
+    h2 { font-size: 37px; }
+    h3 { font-size: 24px; }
+    body { font-size: 17px; }
+    
+    .nav-links a {
+        font-size: 15.5px !important; /* Ensure override of Tailwind text-sm */
+        letter-spacing: 0.03em;
+        font-weight: 500;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    h1 { font-size: 36px; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    body { font-size: 15.8px; }
+}
+
+/* Interactive Elements */
+button, .btn, a[href="contact.html"], a[href="services.html"].bg-gradient-to-r {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 14.5px;
+    letter-spacing: 0.02em;
+}
+
+/* Spacing & Readability */
+section h2, .section-title {
+    margin-bottom: 24px !important;
+}
+
+.logo-text {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+.animate-float-slow {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+    animation: float 5s ease-in-out infinite 1s;
+}
+
+.animate-float-fast {
+    animation: float 4s ease-in-out infinite 2s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
